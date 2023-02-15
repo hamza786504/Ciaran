@@ -1,205 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+        integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ciaran Portfolio Website</title>
+</head>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<body>
 
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Marlon</a>
+
+    <div class="header shadow-sm">
+        <div class="container">
+            <div class="navbar d-flex flex-row align-items-center justify-content-between">
+                <div class="brand">
+                    <a class="anchor_hover navbar-brand fs-3 fw-semibold" href="http://cdoherty.uk/">Ciaran</a>
                 </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Ciaran</span><br> Web Designer</h1>
-
-                    <a href="#" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+                <nav class="navigation">
+                    <div class="menu">
+                        <ul class="d-flex flex-column flex-md-row mb-0">
+                            <li>
+                                <a href="#" class="anchor_hover">Home</a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="#" class="anchor_hover">About</a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="#" class="anchor_hover">Skills</a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="#" class="anchor_hover">Work</a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <a href="#" class="anchor_hover">Contact</a>
+                                <span></span>
+                            </li>
+                            <li>
+                                <div id="moon_btn" class="anchor_hover moon_btn">
+                                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                                </div>
+                                <div id="sun_btn" class="anchor_hover sun_btn">
+                                    <i class="fa fa-sun-o" aria-hidden="true"></i>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Marlon</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
-                    </div>                                   
+                </nav>
+                <div class="toggle_btns d-flex flex-row align-items-center" style="height: 40px;">
+                    <button class="burger_btn flex-column" id="burger_btn">
+                        <div style="margin: 0;"></div>
+                        <div></div>
+                        <div></div>
+                    </button>
+                    <button class="close_btn flex-column" id="close_btn"
+                        style="border: none; padding: 0px !important; background-color: transparent;">
+                        <span style="font-size: 40px; ">&times;</span>
+                    </button>
                 </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Submit" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Marlon</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
-        </footer>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hero_section">
+            <div class="row align-items-start flex-column-reverse flex-md-row justify-content-between py-5">
+                <div class="col-md-6 py-0 py-md-3 text-center mt-5 mt-md-0">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="icons_cover d-flex flex-column align-items-center">
+                                <div class="icon_box wow animate__fadeInLeft" data-wow-duration="0.8s">
+                                    <a href="mailto:ciaran@cdoherty.uk"><i class="fa fa-envelope"
+                                            aria-hidden="true"></i></a>
+                                </div>
+                                <div class="icon_box wow animate__fadeInLeft" data-wow-duration="1.2s">
+                                    <a href=""><i class="fa fa-github" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="icon_box wow animate__fadeInLeft" data-wow-duration="1.6s">
+                                    <a href="https://twitter.com/ciarankdoherty"><i class="fa fa-twitter"
+                                            aria-hidden="true"></i></a>
+                                </div>
+                                <div class="icon_box wow animate__fadeInLeft" data-wow-duration="2s">
+                                    <a href=""><i class="fa fa-dribbble" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="mx-auto text-start left_herosection wow animate__fadeIn" data-wow-duration="1s">
+                                <h1 class="intro fw-semibold">
+                                    Hi, <br />
+                                    I'm <span>Ciaran</span>
+                                </h1>
+                                <div class="tagline">
+                                    <h3>Cyber Security Enthusiast</h3>
+                                </div>
+                                <div class="description">
+                                    <p>Moderate experience in cloud computing and cyber security.</p>
+                                </div>
+
+                                <a href="#contact" style="border: none;" class="px-3 py-3 btn btn-primary">
+                                    Contact Me <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center mt-5 mt-md-0">
+                    <div class="right_hero_section mx-auto wow animate__fadeIn" data-wow-duration="1s">
+                        <img src="images/profile-image.png" alt="profile-image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5 about_me">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="heading my-4">
+                        <h3 class="fw-bold mb-1">About me</h3>
+                        <p>My introduction</p>
+                    </div>
+                </div>
+                <div class="col-md-6 my-5 text-center">
+                    <div class="wow animate__fadeInLeft about_image" data-wow-duration="1s">
+                        <img src="images/about-image.jpg" alt="about-image" />
+                    </div>
+                </div>
+                <div class="col-md-6 my-5 text-center">
+                    <div class="wow animate__fadeInUp my_details"  data-wow-duration="1s">
+                        <p class="mb-5 text-start">Former member of the Royal Navy as a Communications & Information
+                            Systems rating, I have a passion for Information Security, networking, and cyber security,
+                            and aim to become CompTIA A+ and Network+ certified in the near future.</p>
+                        <div class="details_box d-flex flex-row align-items-center justify-content-between mt-4">
+                            <div class="detail d-flex flex-column align-items-center">
+                                <h4 class="fw-semibold fs-1">4</h4>
+                                <p>Years experience</p>
+                            </div>
+                            <div class="detail d-flex flex-column align-items-center">
+                                <h4 class="fw-semibold fs-1">20+</h4>
+                                <p>Completed Projects</p>
+                            </div>
+                            <div class="detail d-flex flex-column align-items-center">
+                                <h4 class="fw-semibold fs-1">40+</h4>
+                                <p>Competencies
+                                    Achieved</p>
+                            </div>
+                        </div>
+
+                        <a download="" href="CV/CV.pdf" style="border: none;" class="btn mt-5 py-3 btn-primary">
+                            Download CV <i class="fa fa-download" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+
+        <div class="my-5 contact_me">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="heading my-4">
+                        <h3 class="fw-bold mb-1">Contact Me</h3>
+                        <p>Get in touch</p>
+                    </div>
+                </div>
+                <div class="col-12 my-5 text-center">
+                    <div class="details_box d-flex flex-column flex-sm-row align-items-center justify-content-between mt-4">
+                        <div class="detail d-flex flex-column flex-md-row align-items-center align-items-md-center justify-content-start wow animate__fadeInUp" data-wow-duration="0.2s">
+                            <h4 class="fw-semibold fs-1"><i class="fa fa-phone" aria-hidden="true"></i></h4>
+                            <div class="mb-2 ms-md-3 mb-sm-0 d-flex flex-column align-items-center align-items-md-start">
+                                <h5>Call Me</h5>
+                                <p>***********</p>
+                            </div>
+                        </div>
+                        <div class="detail d-flex flex-column flex-md-row align-items-center align-items-md-center justify-content-start wow animate__fadeInUp" data-wow-duration="0.9s">
+                            <h4 class="fw-semibold fs-1"><i class="fa fa-envelope" aria-hidden="true"></i></h4>
+                            <div class="mb-2 ms-md-3 mb-sm-0 d-flex flex-column align-items-center align-items-md-start">
+                                <h5>Email</h5>
+                                <p>ciaran@cdoherty.uk</p>
+                            </div>
+                        </div>
+                        <div class="detail d-flex flex-column flex-md-row align-items-center align-items-md-center justify-content-start wow animate__fadeInUp" data-wow-duration="1.6s">
+                            <h4 class="fw-semibold fs-1"><i class="fa fa-envelope" aria-hidden="true"></i></h4>
+                            <div class="mb-2 ms-md-3 mb-sm-0 d-flex flex-column align-items-center align-items-md-start">
+                                <h5>Location</h5>
+                                <p>United Kingdom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-sm-6 text-center">
+                    <h1 class="footer-title">Ciaran</h1>
+                    <span class="footer-subtitle">Cyber Security Enthusiast</span>
+                </div>
+                <div class="col-sm-6 mt-3 mt-sm-0 text-center">
+                    <div class="footer_links d-flex flex-row align-items-center justify-content-center mx-auto">
+                        <div class="linkbox">
+                            <a href="https://twitter.com/ciarankdoherty" target="_blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="linkbox">
+                            <a href="https://www.instagram.com/ciarankdoherty" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="linkbox">
+                            <a href="https://discords.com/bio/p/ciarankdoherty" target="_blank">
+                                <img src="images/discord.png" alt="" />
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-5 text-center">
+                    <p class="mb-0">&copy; 2023 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+        integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
 </html>

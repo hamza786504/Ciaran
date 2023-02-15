@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+:root{
+  --body-background : #fbfbfe;
+  --text-color: black;
+  --purple-blue: #6e57e0;
+  --light-purple-blue: #bbaefc;
+  --gray-text: #6d73a4;
+  --inverted-text-color: white;
+}
+a{
+  text-decoration: none;
+}
+img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--body-background);
+}
+.container{
+  max-width: 992px;
+}
+.btn-primary{
+  color: white !important;
+  background-color: var(--purple-blue) !important;
+}
+.btn-primary a{
+  color: inherit;
+}
+
+
+
+.navigation .menu ul li:hover .anchor_hover{
+  color: var(--purple-blue);
+}
+.navbar-brand{
+  color: var(--text-color);
+}
+.header{
+  height: 50px;
+  z-index: 100;
+}
+.brand{
+  flex-grow: 1;
+}
+.burger_btn{
+  border: none !important;
+  background-color: transparent;
+  user-select: none;
+}
+.burger_btn > div{
+  width: 25px !important;
+  height: 3px;
+  background-color: var(--text-color);
+  margin-top: 5px;
+  cursor: pointer;
+}
+.close_btn span{
+  width: 25px !important;
+  height: 3px;
+  margin-top: 5px;
+  color: var(--text-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+.navigation .menu ul{
+  list-style-type: none;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.navigation .menu ul li {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.navigation .menu ul li span{
+  width: 30px;
+  height: 2px;
+  background-color: transparent;
+  margin-left: 0px;
+}
+.navigation .menu ul li a{
+  color: var(--text-color);
+  font-weight: 500;
+}
+.navigation .menu ul li:hover span{
+  width: 30px;
+  height: 2px;
+  background-color: var(--purple-blue);
+  margin-left: 0px;
+}
+.moon_btn , .sun_btn{
+  height: 30px; width : 30px;
+  cursor: pointer;
+  padding: 0px 5px;
+  display: block;
+  color: var(--text-color);
+}
+.sun_btn{
+  display: none;
+}
+.intro{
+  color: var(--text-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.intro span{
+  color: var(--purple-blue);
+}
+.tagline{
+  font-size: 1.7rem;
+}
+.tagline , .description{
+  color: var(--gray-text);
+}
+.right_hero_section{
+  width: 20rem;
+  aspect-ratio: 1/1;
+}
+.right_hero_section img{
+  margin: 0 auto;
+}
+.hero_section .icon_box a{
+  color: var(--purple-blue);
+}
+.hero_section .icon_box{
+  color: inherit;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+.hero_section .icon_box:first-child{
+  margin-top: 0;
+}
+.about_me{
+  color: var(--text-color);
+}
+.about_image{
+  max-width: 300px;
+  width: 90%;
+  border-radius: 7px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.about_me .my_details{
+  max-width: 90%;
+  margin: 0 auto;
+}
+.about_me .my_details .detail{
+  max-width: 31%;
+}
+.contact_me .detail{
+  color: var(--purple-blue);
+}
+.contact_me , .contact_me .detail{
+  color: var(--text-color);
+}
+.contact_me .detail h4{
+  color: var(--purple-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  background-color: var(--purple-blue);
+  color: white;
+}
+.footer .linkbox{
+  margin-right: 30px;
+}
+.footer .linkbox a{
+  color: white;
+  font-size: 2rem;
+  transition: all linear 0.2s;
+}
+.footer .linkbox a img{
+  height: 2.4rem;
+}
+.footer .linkbox a:hover{
+  color: var(--light-purple-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width : 768px){
+  .burger_btn , .close_btn{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 768px){
+  .navigation .menu{
+    position: fixed;
+    right: 0;
+    top: 52px;
+    max-width: 270px;
+    width: 90%;
+    background-color: white;
+  }
+  .navigation{
+    display: none;
+  }
+  .navigation .menu ul li a{
+    padding: 10px;
+    padding-left: 20px;
+    display: inline-flex;
+    color: white;
+  }
+  .navigation .menu ul li{
+    margin-left: 0px !important;
+  }
+  .navigation .menu ul li:first-child a{
+    margin-top: 30px;
+  }
+  .navigation .menu ul li span{
+    margin-left: 20px;
+  }
+  .navigation .menu ul li:hover span{
+    margin-left: 20px;
+  }
+  .navigation .menu{
+    height: 100%;
+    background-color: #191627;
+  }
+  .burder_btn{
+    display: flex;
+  }
+  .close_btn{
+    display: none;
+  }
+  .moon_btn , .sun_btn{
+    color: white;
+    margin-top: 21px;
+    margin-left: 18px;
+  }
+}
