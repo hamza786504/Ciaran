@@ -67,3 +67,16 @@ document.getElementById("sun_btn").addEventListener("click" , function(){
         document.getElementById("sun_btn").style.display = "none";
     }
 });
+
+
+
+window.onscroll = function() {
+    if(window.innerWidth < 768){
+        const display_value = document.querySelector(".navigation").style.display;
+        if(display_value === "block"){
+            document.querySelector(".navigation").style.display = "none";
+            document.getElementById("burger_btn").style.display = "flex";
+            document.getElementById("close_btn").style.display = "none";
+        }
+    }
+}

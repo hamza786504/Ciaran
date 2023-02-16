@@ -290,6 +290,65 @@ body {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: var(--purple-blue);
 }
+.skills , .skills , .accordion-body{
+  color: var(--text-color);
+}
+.skills .icon_box{
+  color: var(--purple-blue);
+}
+.skills .skills_title h5{
+  color: var(--purple-blue);
+}
+.skills .skills_title p{
+  margin-bottom: 0;
+  color: var(--gray-text);
+  font-size: 12px;
+}
+.skills .accordion-item{
+  background-color: transparent !important;
+  border: none;
+}
+.skills .accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+.skills .accordion-button{
+  background-color: transparent !important;
+}
+.skills .accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: none;
+}
+.skills .progress{
+  background: #c1b6fc;
+  height: 7px;
+}
+.skills .progress .progress-bar {
+  background-color: var(--purple-blue) !important;
+}
+.skills .individual_skill{
+  max-width: 330px;
+  margin: 0 auto;
+}
+.skills .accordion-body{
+  padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
