@@ -17,6 +17,13 @@ document.getElementById("close_btn").addEventListener("click", function(){
 
 document.getElementById("moon_btn").addEventListener("click" , function(){
     document.documentElement.style.setProperty('--body-background', '#191627');
+    document.getElementById("footer").style.backgroundColor = "#17161f";
+    const tag = document.querySelectorAll(".service_card");
+    Array.from(tag).forEach(element => {
+        element.style.backgroundColor = "#211d35";
+        element.style.border = "0px"
+    });
+
     document.documentElement.style.setProperty('--text-color', '#fbfbfe');
     const elements = document.querySelectorAll("hero_section icon_box a");
     Array.from(elements).forEach(element => {
@@ -41,6 +48,13 @@ document.getElementById("moon_btn").addEventListener("click" , function(){
 document.getElementById("sun_btn").addEventListener("click" , function(){
     document.documentElement.style.setProperty('--body-background', '#fbfbfe');
     document.documentElement.style.setProperty('--text-color', '#191627');
+    const tag = document.querySelectorAll(".service_card");
+    Array.from(tag).forEach(element => {
+        element.style.backgroundColor = "white";
+        element.style.border = "1px solid #00000034";
+    });
+
+    document.getElementById("footer").style.backgroundColor = "#6e57e0";
     document.getElementById("moon_btn").style.display = "block";
         document.getElementById("sun_btn").style.display = "none";
     if(window.innerWidth > 768){
