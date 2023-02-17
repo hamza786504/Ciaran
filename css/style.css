@@ -87,7 +87,7 @@ body {
 }
 
 .navbar-brand {
-  color: var(--text-color);
+  color: black;
 }
 
 .header {
@@ -111,7 +111,7 @@ body {
 .burger_btn>div {
   width: 25px !important;
   height: 3px;
-  background-color: var(--text-color);
+  background-color: black;
   margin-top: 5px;
   cursor: pointer;
 }
@@ -120,7 +120,7 @@ body {
   width: 25px !important;
   height: 3px;
   margin-top: 5px;
-  color: var(--text-color);
+  color: black;
   background-color: transparent;
   cursor: pointer;
 }
@@ -145,7 +145,7 @@ body {
 }
 
 .navigation .menu ul li a {
-  color: var(--text-color);
+  color: black;
   font-weight: 500;
 }
 
