@@ -30,6 +30,8 @@ document.getElementById("moon_btn").addEventListener("click" , function(){
       element.style.color = "white";
     });
 
+
+
     if(window.innerWidth > 768){
         document.getElementById("burger_btn").style.display = "none";
         document.getElementById("close_btn").style.display = "none";
@@ -79,4 +81,21 @@ window.onscroll = function() {
             document.getElementById("close_btn").style.display = "none";
         }
     }
-}
+};
+
+
+const educationBtn = document.getElementById("education_btn");
+const workBtn = document.getElementById("work_btn");
+
+workBtn.addEventListener("click", () => {
+  educationBtn.classList.toggle("active");
+  workBtn.classList.toggle("active");
+  document.querySelector(".work_boxes").style.display = "block";
+  document.querySelector(".education_boxes").style.display = "none";
+});
+educationBtn.addEventListener("click", () => {
+    educationBtn.classList.toggle("active");
+    workBtn.classList.toggle("active");
+    document.querySelector(".work_boxes").style.display = "none";
+  document.querySelector(".education_boxes").style.display = "block";
+  });
