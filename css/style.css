@@ -474,7 +474,9 @@ body {
 .fixed_back , .model_box{
   display: none;
 }
-
+.fixed_back .model_one_cover , .fixed_back .model_two_cover , .fixed_back .model_three_cover{
+  color: var(--text-color);
+}
 
 
 

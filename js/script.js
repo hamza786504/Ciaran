@@ -30,6 +30,10 @@ document.getElementById("moon_btn").addEventListener("click", function () {
     document.getElementById("header").style.backgroundColor = "transparent";
     document.querySelector(".header .navbar-brand").style.color = "white";
 
+    document.querySelector(".model_three_cover").style.backgroundColor = "#211d35";
+    document.querySelector(".model_two_cover").style.backgroundColor = "#211d35";
+    document.querySelector(".model_one_cover").style.backgroundColor = "#211d35";
+
 
     const burgerbutton = document.querySelectorAll("#burger_btn div");
     Array.from(burgerbutton).forEach(element => {
@@ -77,6 +81,14 @@ document.getElementById("sun_btn").addEventListener("click", function () {
     document.documentElement.style.setProperty('--text-color', '#191627');
     document.getElementById("header").style.backgroundColor = "#fbfbfe";
     document.querySelector(".header .navbar-brand").style.color = "";
+
+
+    document.querySelector(".model_three_cover").style.color = "black";
+    document.querySelector(".model_three_cover").style.backgroundColor = "white";
+    document.querySelector(".model_two_cover").style.color = "black";
+        document.querySelector(".model_two_cover").style.backgroundColor = "white";
+    document.querySelector(".model_one_cover").style.color = "black";
+        document.querySelector(".model_one_cover").style.backgroundColor = "white";
 
     const tag1 = document.querySelectorAll(".header .navigation .menu ul li a");
     Array.from(tag1).forEach(element => {
