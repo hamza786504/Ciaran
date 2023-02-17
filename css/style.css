@@ -54,6 +54,7 @@ body {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #b6b7c2c2;
+  border-radius: 40px;
 }
 
 /* Handle on hover */
@@ -92,6 +93,9 @@ body {
 .header {
   height: 50px;
   z-index: 100;
+  position: fixed;
+  width: 100%;
+  background: #fbfbfe;
 }
 
 .brand {
